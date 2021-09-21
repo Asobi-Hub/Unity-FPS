@@ -5,10 +5,10 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
 
-    private float rotateSpeedX  = 3f;
-    private float rotateSpeedY  = 5f;
-    private float limitMinX     = -80;
-    private float limitMaxX     = 50;
+    private float rotateSpeedX  = 3f;       // 좌/우 회전 속도
+    private float rotateSpeedY  = 5f;       // 상/하 회전 속도
+    private float limitMinX     = -80;      // 내려다 볼 수 있는 한계 각도
+    private float limitMaxX     = 50;       // 올려다 볼 수 있는 한계 각도
     private float eulerAngleX;
     private float eulerAngleY;
     
@@ -26,6 +26,13 @@ public class CameraController : MonoBehaviour
         // Mathf.Clamp(float value, float min, float max);
         eulerAngleX = Mathf.Clamp(eulerAngleX, limitMinX, limitMaxX);
 
+        // 카메라의 rotation값에 쿼터니언으로 대입
         transform.rotation = Quaternion.Euler(eulerAngleX, eulerAngleY, 0);
     }
 }
+
+/*
+ * File : CameraController.cs
+ * Desc
+ *  : 플레이어 카메라 컨트롤 스크립트
+ */

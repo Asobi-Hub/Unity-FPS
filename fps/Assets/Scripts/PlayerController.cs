@@ -1,15 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private KeyCode             JumpKey = KeyCode.Space;
+    private KeyCode             JumpKey = KeyCode.Space;        // 점프 키
     [SerializeField]
-    private CameraController    cameraController;    
+    private CameraController    cameraController;
     private PlayerMovement      playerMovement;
     private void Start()
     {
@@ -35,6 +31,7 @@ public class PlayerController : MonoBehaviour
             playerMovement.JumpTo();
         }
 
+        // 마우스 x y축 입력
         float mouseX = Input.GetAxis("Mouse X");
         float mouseY = Input.GetAxis("Mouse Y");
 
@@ -45,7 +42,7 @@ public class PlayerController : MonoBehaviour
 /*
  * File : PlayerController.cs
  * 
- * Desc :
- *      플레이어의 모든 조작(컨트롤)을 담당하는 스크립트.
+ * Desc
+ *  : 플레이어의 모든 조작(컨트롤)을 담당하는 스크립트.
  *      
  */

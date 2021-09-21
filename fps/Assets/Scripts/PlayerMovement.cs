@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
     }
-    // Run every physics iteraction
+
     private void FixedUpdate()
     {
         // 바닥에 닿지 않았을 때 (점프 중) 중력가속도에 의해 점차 빠르게 내려옴
@@ -49,3 +49,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
+
+/*
+ * File : PlayerMovement.cs
+ * Desc 
+ *  : 플레이어 이동 스크립트
+ *  
+ */
