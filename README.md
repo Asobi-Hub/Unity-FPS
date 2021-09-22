@@ -13,7 +13,7 @@ Unity 3D FPS 개발
 - 밤 동안 쉘터 방어 & 생존
 - 무한 웨이브(endless) & 생존기간(date)을 점수로 판정
 - 날이 지날 때 마다 점점 강해지는 몹(좀비)들
-- 모듈러 빌딩 시스템 (e.g. Rust)
+- Easy Build System (e.g. Rust)
 - 무기 블프 시스템
 
 ## 구현 목표
